@@ -17,9 +17,9 @@
             <input type="checkbox">
             <span class="task-text"><%= ejes[i].name %></span>
             <div class="actions">
-              <form action="/edit" method="POST" style="display:inline;">
+              <form action="/edit" method="POST" style="display:flex; text-align: right;">
                 <input type="hidden" name="id" value="<%= item._id %>">
-                <input type="text" name="newtask" placeholder="New task" required>
+                <input class="edit-input" type="text" name="newtask" placeholder="Rename task" required>
                 <button type="submit" class="edit-btn">✏️</button>
               </form>
               <form action="/delete" method="POST" style="display:inline;">
@@ -31,7 +31,7 @@
     <% }) %> 
 
     <form action="/add" method="POST">
-      <input type="text" name="ele1" placeholder="Enter the text">
+      <input type="text" name="ele1" placeholder="Name of task">
       <button type="submit">+</button>
     </form>
   </div>
