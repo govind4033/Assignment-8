@@ -72,8 +72,3 @@ app.post("/delete", async (req, res) => {
     res.status(500).send("Delete of task failed on mongodb database");
   }
 });
-
-
-app.listen(8000, () => {
-  console.log("Server running on port no 8000");
-});
