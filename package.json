@@ -1,0 +1,28 @@
+{
+  "name": "first-step",
+  "version": "1.0.0",
+  "description": "this is my first step towards nodejs",
+  "main": "jc.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/govind4033/first-step.git"
+  },
+  "author": "govind lodhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/govind4033/first-step/issues"
+  },
+  "homepage": "https://github.com/govind4033/first-step#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.0",
+    "superheroes": "^4.0.0"
+  }
+}
