@@ -8,8 +8,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 
-mongoose.connect("mongodb://govindpatel4033:Askrithe40%40@@ac-zutovry-shard-00-00.l3yzewq.mongodb.net:27017,ac-zutovry-shard-00-01.l3yzewq.mongodb.net:27017,ac-zutovry-shard-00-02.l3yzewq.mongodb.net:27017/?ssl=true&replicaSet=atlas-3s0xo1-shard-0&authSource=admin&appName=ClusterG")
-  .then(() => console.log("Connected to MongoDB"))
+mongoose.connect("mongodb://govindpatel4033:Askrithe40%40@ac-zutovry-shard-00-00.l3yzewq.mongodb.net:27017,ac-zutovry-shard-00-01.l3yzewq.mongodb.net:27017,ac-zutovry-shard-00-02.l3yzewq.mongodb.net:27017/todolist?ssl=true&replicaSet=atlas-3s0xo1-shard-0&authSource=admin&appName=ClusterG")  .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log("Failed to connect with Mongodb", err.message));
 
 const taskSchema = new mongoose.Schema({
